@@ -74,7 +74,7 @@ jobs:
           export DOCKER_BUILDKIT=0
           export: COMPOSE_DOCKER_CLI_BUILD=0
         tags:
-          mncampos/javacrescer:latest
+          mateusnunescampos/javacrescer:latest
           
   deploy:
     name: App ACI
@@ -92,7 +92,7 @@ jobs:
       with:
         resource-group: RG-APPS-CRESCER
         dns-name-label: lab-crescer-mateus-campos
-        image: mncampos/javacrescer:latest
+        image: mateusnunescampos/javacrescer:latest
         cpu: 1
         memory: 1
         registry-login-server: docker.io
